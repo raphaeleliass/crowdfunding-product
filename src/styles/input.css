@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply text-bodyCopy cursor-default bg-neutral-50 text-neutralBlack;
+}
+
+.mobile-nav {
+  @apply font-Commissioner500 fixed left-0 right-0 top-0 z-50 mx-4 flex -translate-y-full rounded-lg bg-white px-2 text-xl text-neutralBlack  transition-all md:hidden;
+}
+
+.mobile-nav.active {
+  @apply font-Commissioner700 fixed left-0 right-0 top-28 z-50 mx-4 flex translate-y-0 rounded-lg bg-white px-2 text-xl text-neutralBlack shadow-xl transition-all md:hidden;
+}
+
+.mobile-navlinks {
+  @apply block p-4;
+}
+
+.btn-primary {
+  @apply font-Commissioner500 rounded-full bg-primaryModerate_cyan text-white transition-all hover:bg-primaryDark_cyan md:px-6 md:py-3;
+}
+.btn-out-stock {
+  @apply font-Commissioner500 cursor-not-allowed rounded-full bg-neutralDark_gray text-white md:px-6 md:py-3;
+}
+
+.articles {
+  @apply flex w-full flex-col rounded-lg bg-white text-center shadow-xl md:gap-6 md:p-14;
+}
+
+.plan-cards {
+  @apply flex flex-col rounded-md border-2 text-left md:w-full md:gap-8 md:p-6;
+}

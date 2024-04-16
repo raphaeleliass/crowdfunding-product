@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the Mastercraft Bamboo Monitor Riser, a beautifully handcrafted stand designed to elevate your screen to a comfortable viewing height and improve your workspace. Join the campaign to support this stylish and ergonomic monitor stand."
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="src/styles/output.css" />
+
+    <!-- Google Fonts -->
+    <!-- Commissioner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript Files -->
+    <script src="src/scripts/navbar.js" defer></script>
+
+    <title>Crowdfunding product page</title>
+  </head>
+  <body>
+    <header
+      class="fixed left-0 top-0 flex w-full items-center justify-between bg-none px-6 py-8 text-white md:absolute md:px-32 md:py-8"
+    >
+      <a href="index.html"
+        ><img src="src/images/logo.svg" alt="Logo Mastercraft"
+      /></a>
+      <nav class="hidden md:flex">
+        <ul class="flex gap-2">
+          <li class="p-2">
+            <a href="#" class="transition-all hover:text-gray-200">About</a>
+          </li>
+          <li class="p-2">
+            <a href="#" class="transition-all hover:text-gray-200">Discover</a>
+          </li>
+          <li class="p-2">
+            <a href="#" class="transition-all hover:text-gray-200"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button id="menu-btn" class="flex w-8 transition-all md:hidden">
+        <img src="src/images/icon-hamburger.svg" alt="Menu Icon" />
+      </button>
+
+      <button id="menu-close" class="hidden w-8 transition-all md:hidden">
+        <img src="src/images/icon-close-menu.svg" alt="" />
+      </button>
+
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav" id="mobile-nav">
+        <ul class="flex w-full flex-col">
+          <li class="py-2"><a href="#" class="mobile-navlinks">About</a></li>
+          <hr />
+          <li class="py-2"><a href="#" class="mobile-navlinks">Discover</a></li>
+          <hr />
+          <li class="py-2">
+            <a href="#" class="mobile-navlinks">Get Started</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="fixed left-0 top-0 z-40 hidden min-h-screen w-screen bg-neutralBlack opacity-30"
+        id="close-aria"
+      ></div>
+    </header>
+
+    <main class="z-30 bg-neutral-50">
+      <div
+        class="md:bg-hero_desktop bg-hero_mobile h-96 w-full bg-cover bg-center"
+      ></div>
+
+      <section
+        class="m-auto flex flex-col items-center justify-center md:absolute md:left-0 md:right-0 md:top-64 md:max-w-2xl md:gap-8"
+      >
+        <article class="articles">
+          <img
+            class="absolute m-auto size-14 rounded-full shadow-xl md:-top-8 md:left-0 md:right-0"
+            src="src/images/logo-mastercraft.svg"
+            alt="Logo Mastercraft"
+          />
+          <h1 class="font-Commissioner700 text-3xl">
+            Mastercraft Bamboo Monitor Riser
+          </h1>
+          <p class="text-neutralDark_gray">
+            A beautiful & handcrafted monitor stand to reduce neck and eye
+            strain.
+          </p>
+          <div class="flex justify-between">
+            <button class="btn-primary">Back this project</button>
+            <div class="flex items-center text-center" id="bookmark-btn">
+              <button class="absolute">
+                <img src="src/images/icon-bookmark.svg" alt="Bookmark Icon" />
+              </button>
+              <aside
+                class="cursor-pointer rounded-full bg-neutral-200 md:px-10 md:py-4"
+              >
+                <p class="font-Commissioner700 text-neutralDark_gray md:ml-8">
+                  Bookmark
+                </p>
+              </aside>
+            </div>
+          </div>
+        </article>
+
+        <article class="articles">
+          <div class="flex justify-around md:flex-row">
+            <div class="flex border-r md:flex-col md:gap-2 md:pr-14">
+              <h2 class="font-Commissioner700 text-4xl">$89,914</h2>
+              <p class="text-sm text-neutralDark_gray">of $100,000 backed</p>
+            </div>
+
+            <div class="flex border-r md:flex-col md:gap-2 md:pr-14">
+              <h2 class="font-Commissioner700 text-4xl">5,007</h2>
+              <p class="text-sm text-neutralDark_gray">total backers</p>
+            </div>
+
+            <div class="flex md:flex-col md:gap-2 md:pr-10">
+              <h2 class="font-Commissioner700 text-4xl">56</h2>
+              <p class="text-sm text-neutralDark_gray">days left</p>
+            </div>
+          </div>
+          <div class="rounded-full bg-neutral-300 md:h-3 md:w-full">
+            <div
+              class="rounded-full bg-primaryModerate_cyan md:h-full md:w-4/5"
+            ></div>
+          </div>
+        </article>
+
+        <article class="articles md:mb-32">
+          <div class="flex flex-col gap-4 text-left">
+            <h2 class="font-Commissioner700 text-lg">About this project</h2>
+            <p class="text-sm text-neutralDark_gray">
+              The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
+              platform that elevates your screen to a more comfortable viewing
+              height. Placing your monitor at eye level has the potential to
+              improve your posture and make you more comfortable while at work,
+              helping you stay focused on the task at hand.
+            </p>
+            <p class="text-sm text-neutralDark_gray">
+              Featuring artisan craftsmanship, the simplicity of design creates
+              extra desk space below your computer to allow notepads, pens, and
+              USB sticks to be stored under the stand.
+            </p>
+          </div>
+          <div class="plan-cards">
+            <div
+              class="flex content-center items-center justify-between md:flex-row"
+            >
+              <h2 class="font-Commissioner700 text-xl text-neutralBlack">
+                Bamboo Stand
+              </h2>
+              <p class="font-Commissioner500 text-sm text-primaryModerate_cyan">
+                Pledge $25 or more
+              </p>
+            </div>
+            <p class="text-sm text-neutralDark_gray">
+              You get an ergonomic stand made of natural bamboo. You've helped
+              us launch our promotional campaign, and you’ll be added to a
+              special Backer member list.
+            </p>
+            <div
+              class="flex content-center items-center justify-between md:flex-row"
+            >
+              <h2 class="flex content-center items-center gap-1 text-2xl">
+                101
+                <p class="text-sm text-neutralDark_gray">left</p>
+              </h2>
+              <button class="btn-primary">Select Reward</button>
+            </div>
+          </div>
+          <div class="plan-cards">
+            <div
+              class="flex content-center items-center justify-between md:flex-row"
+            >
+              <h2 class="font-Commissioner700 text-xl text-neutralBlack">
+                Black Edition
+              </h2>
+              <p class="font-Commissioner500 text-sm text-primaryModerate_cyan">
+                Stand Pledge $75 or more
+              </p>
+            </div>
+            <p class="text-sm text-neutralDark_gray">
+              You get a Black Special Edition computer stand and a personal
+              thank you. You’ll be added to our Backer member list. Shipping is
+              included.
+            </p>
+            <div
+              class="flex content-center items-center justify-between md:flex-row"
+            >
+              <h2 class="flex content-center items-center gap-1 text-2xl">
+                64
+                <p class="text-sm text-neutralDark_gray">left</p>
+              </h2>
+              <button class="btn-primary">Select Reward</button>
+            </div>
+          </div>
+          <div class="plan-cards opacity-50">
+            <div
+              class="flex content-center items-center justify-between md:flex-row"
+            >
+              <h2 class="font-Commissioner700 text-xl text-neutralBlack">
+                Mahogany Special Edition
+              </h2>
+              <p class="font-Commissioner500 text-sm text-primaryModerate_cyan">
+                Pledge $200 or more
+              </p>
+            </div>
+            <p class="text-sm text-neutralDark_gray">
+              You get two Special Edition Mahogany stands, a Backer T-Shirt, and
+              a personal thank you. You’ll be added to our Backer member list.
+              Shipping is included.
+            </p>
+            <div
+              class="flex content-center items-center justify-between md:flex-row"
+            >
+              <h2 class="flex content-center items-center gap-1 text-2xl">
+                0
+                <p class="text-sm text-neutralDark_gray">left</p>
+              </h2>
+              <button class="btn-out-stock">Out of Stock</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Selection modal start -->
+      <section
+        class="fixed left-0 top-0 flex min-h-screen w-full flex-col items-center justify-center bg-black bg-opacity-50"
+      >
+        <div
+          class="flex flex-col rounded-lg bg-white md:max-w-2xl md:gap-6 md:p-8"
+        >
+          <h2 class="font-Commissioner700 text-xl">Back this project</h2>
+          <p class="text-sm text-neutralDark_gray">
+            Want to support us in bringing Mastercraft Bamboo Monitor Riser out
+            in the world?
+          </p>
+          <div class="">
+            <label for=""><input type="checkbox" placeholder="OLÁ MUNDO" class="" />Pledge with no reward</label>
+            Choose to support us without a reward if you simply believe in our
+            project. As a backer, you will be signed up to receive product
+            updates via email.
+            <div class="">
+              Bamboo Stand Pledge $25 or more You get an ergonomic stand made of
+              natural bamboo. You've helped us launch our promotional campaign,
+              and you’ll be added to a special Backer member list. 101 left
+            </div>
+          </div>
+          <div class="">
+            Black Edition Stand Pledge $75 or more You get a Black Special
+            Edition computer stand and a personal thank you. You’ll be added to
+            our Backer member list. Shipping is included. 64 left
+          </div>
+          <div class="">
+            Mahogany Special Edition Pledge $200 or more You get two Special
+            Edition Mahogany stands, a Backer T-Shirt, and a personal thank you.
+            You’ll be added to our Backer member list. Shipping is included. 0
+            left
+          </div>
+        </div>
+      </section>
+      <!-- Selected pledge start -->
+      Enter your pledge $25 Continue
+      <!-- Selected pledge end -->
+      <!-- Selected pledge start -->
+      Enter your pledge $75 Continue
+      <!-- Selected pledge end -->
+      <!-- Selected pledge  start -->
+      Enter your pledge $200 Continue
+      <!-- Selected pledge end -->
+      <!-- Selection modal end -->
+      <!-- Success modal start -->
+      Thanks for your support! Your pledge brings us one step closer to sharing
+      Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our
+      campaign is completed. Got it!
+      <!-- Success modal end -->
+    </main>
+  </body>
+</html>
