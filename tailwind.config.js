@@ -22,9 +22,9 @@ module.exports = {
       },
       backgroundImage: {
         hero_desktop: "url('/src/images/image-hero-desktop.jpg')",
-        hero_mobile: "url('/src/images/image-hero-mobile.jpg')"
-      }
+        hero_mobile: "url('/src/images/image-hero-mobile.jpg')",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
