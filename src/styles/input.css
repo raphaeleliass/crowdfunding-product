@@ -7,15 +7,19 @@ html {
 }
 
 body {
-  @apply text-bodyCopy cursor-default bg-neutral-50 text-neutralBlack font-Commissioner;
+  @apply cursor-default bg-neutral-50 font-Commissioner text-bodyCopy text-neutralBlack;
+}
+
+header {
+  @apply fixed left-0 top-0 z-50 flex w-full justify-between px-6 py-8 text-neutralBlack backdrop-blur-xl backdrop-brightness-50 md:absolute md:bg-none md:px-32 md:py-8 md:text-white md:backdrop-blur-none md:backdrop-brightness-100;
 }
 
 .mobile-nav {
-  @apply font-Commissioner500 fixed left-0 right-0 top-0 z-50 mx-4 flex -translate-y-full rounded-lg bg-white px-2 text-xl text-neutralBlack  transition-all md:hidden;
+  @apply fixed left-0 right-0 top-0 z-50 mx-4 flex -translate-y-full rounded-lg bg-white px-2 text-xl font-Commissioner500 text-neutralBlack  transition-all md:hidden;
 }
 
 .mobile-nav.active {
-  @apply font-Commissioner700 fixed left-0 right-0 top-28 z-50 mx-4 flex translate-y-0 rounded-lg bg-white px-2 text-xl text-neutralBlack shadow-xl transition-all md:hidden;
+  @apply fixed left-0 right-0 top-28 z-50 mx-4 flex translate-y-0 rounded-lg bg-white px-2 text-xl font-Commissioner700 text-neutralBlack shadow-xl transition-all md:hidden;
 }
 
 .mobile-navlinks {
@@ -23,18 +27,14 @@ body {
 }
 
 .btn-primary {
-  @apply font-Commissioner500 rounded-full bg-primaryModerate_cyan text-white transition-all hover:bg-primaryDark_cyan md:px-6 md:py-3;
+  @apply rounded-full bg-primaryModerate_cyan px-6 py-3 font-Commissioner500 text-white transition-all hover:bg-primaryDark_cyan;
 }
 .btn-out-stock {
-  @apply font-Commissioner500 cursor-not-allowed rounded-full bg-neutralDark_gray text-white md:px-6 md:py-3;
+  @apply cursor-not-allowed rounded-full bg-neutralDark_gray font-Commissioner500 text-white px-6 py-3;
 }
 
 .articles {
-  @apply flex w-full flex-col rounded-lg bg-white text-center shadow-xl md:gap-6 md:p-14;
-}
-
-.plan-cards {
-  @apply flex flex-col rounded-md border-2 text-left md:w-full md:gap-8 md:p-6;
+  @apply flex w-full flex-col gap-8 rounded-lg bg-white px-4 py-12 text-center shadow-xl md:gap-6 md:px-14 md:py-14;
 }
 
 @layer base {
@@ -43,4 +43,72 @@ body {
     -webkit-appearance: none;
     margin: 0;
   }
+}
+
+.h2-modal {
+  @apply text-xl font-Commissioner700;
+}
+
+.small-text {
+  @apply text-sm text-neutralDark_gray;
+}
+
+.modal-input {
+  @apply form-radio cursor-pointer rounded-full text-primaryModerate_cyan hover:border-primaryModerate_cyan focus:hidden md:size-6;
+}
+
+.nav-links {
+  @apply transition-all hover:text-gray-200;
+}
+
+.plan-cards {
+  @apply flex flex-col rounded-md border-2 p-6 gap-8 text-left md:w-full md:gap-6 md:p-6;
+}
+
+.plan-cards-wrapper {
+  @apply flex flex-col content-center gap-2 md:flex-row md:items-center md:justify-between md:gap-0;
+}
+
+.plan-cards-title {
+  @apply text-xl font-Commissioner700 text-neutralBlack;
+}
+
+.plan-cards-prices {
+  @apply text-sm font-Commissioner500 text-primaryModerate_cyan;
+}
+
+.wrapper-select-reward {
+  @apply flex md:flex-row flex-col md:gap-0 gap-4 md:justify-between
+}
+
+.plan-cards-quantities {
+  @apply flex content-center font-Commissioner700 items-center gap-1 text-2xl;
+}
+
+.modal-label {
+  @apply flex cursor-pointer items-center md:flex-row flex-col md:gap-2 gap-1 md:justify-between font-Commissioner700 transition-all hover:text-primaryModerate_cyan;
+}
+
+.modal-prices {
+  @apply text-sm font-Commissioner400 text-primaryModerate_cyan;
+}
+
+.alert-text {
+  @apply text-sm font-Commissioner500 text-red-600;
+}
+
+.text-describe-plan {
+  @apply text-sm text-neutralDark_gray md:py-3 md:pl-6;
+}
+
+.bg-bookmark {
+  @apply hidden cursor-pointer rounded-full bg-neutral-200 text-neutralDark_gray duration-300 ease-in-out md:block md:px-10 md:py-4;
+}
+
+.bg-bookmark.active {
+  @apply hidden cursor-pointer rounded-full bg-primaryModerate_cyan text-white duration-300 ease-in-out md:block md:px-10 md:py-4;
+}
+
+.hide{
+  @apply hidden
 }
